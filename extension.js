@@ -75,7 +75,7 @@ async function annotateCode(editor) {
 
   try {
     const analysis = await safeGenerate(model, messages);
-    const comment = `${commentStyle.start}\nAI Commentary:\n${analysis}\n${commentStyle.end}\n`;
+    // const comment = `${commentStyle.start}\nAI Commentary:\n${analysis}\n${commentStyle.end}\n`;
 
     // Split the AI commentary into lines to insert them as individual comments
     const commentaryLines = analysis
