@@ -1,65 +1,32 @@
-# jsannotator README
+# CodeWhisperer - AI Code Assistant VS Code Extension
 
-This is the README for your extension "jsannotator". After writing up a brief description, we recommend including the following sections.
+Welcome to **CodeWhisperer**, a VS Code extension that helps you understand your code by generating AI-powered commentary in a friendly, concise manner. CodeWhisperer utilizes GPT-4 to analyze your code and provide insightful explanations in the form of comments, making it easier to understand and explain your code!
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **AI-Powered Code Explanations**: Automatically generates human-readable commentary for your code.
+- **Multi-Language Support**: Works with multiple languages such as JavaScript, TypeScript, Python, Java, C++, and more!
+- **Comment Formatting**: Commentary is inserted as language-specific comments in your code (e.g., `//` for C/C++/JavaScript, `#` for Python).
+- **Seamless Integration**: Simply run the extension, and it will analyze your code and add the commentary.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Navigate to the Extensions tab on the left-hand side (or press `Ctrl+Shift+X`).
+3. Search for **CodeWhisperer** and click **Install**.
+4. Alternatively, you can install the extension directly from the marketplace via this link.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## How to Use
 
-## Requirements
+### Activate CodeWhisperer:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+2. Type `codeWhisperer explain` and select the command.
 
-## Extension Settings
+### Select Code:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- You can either select a portion of the code you want to annotate, or leave it unselected to annotate the entire file.
 
-For example:
+### AI Commentary:
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Once you run the command, the extension will analyze your code and insert the AI-generated commentary directly into the code as comments.
