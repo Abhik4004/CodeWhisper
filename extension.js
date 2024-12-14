@@ -7,12 +7,12 @@ const ai = require('unlimited-ai');
  */
 function activate(context) {
   console.log(
-    'Hey there! Your "AI Code Assistant" extension is live and ready to help!'
+    'Hey there! Your "CodeWhisperer" extension is live and ready to help!'
   );
 
   // Registering the command
   const disposableCommand = vscode.commands.registerCommand(
-    'jsannotator.run',
+    'codewhisperer.run',
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {

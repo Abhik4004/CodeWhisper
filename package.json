@@ -1,6 +1,6 @@
 {
-  "name": "jsannotator",
-  "displayName": "jsannotator",
+  "name": "codewhisperer",
+  "displayName": "codewhisperer",
   "description": "Runs and annotates your JS code",
   "version": "0.0.1",
   "engines": {
@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand: jsannotator.run"
+    "onCommand: codewhisperer.run"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "jsannotator.run",
-        "title": "Annotate"
+        "command": "codewhisperer.run",
+        "title": "CodeWhisperer Explain"
       }
     ]
   },
