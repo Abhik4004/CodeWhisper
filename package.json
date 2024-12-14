@@ -13,6 +13,7 @@
     "onCommand: codewhisperer.run"
   ],
   "main": "./extension.js",
+  "icon": "images/CodeWhisperer.png",
   "contributes": {
     "commands": [
       {
