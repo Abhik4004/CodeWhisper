@@ -56,7 +56,7 @@ async function annotateCode(editor) {
       : 'Analyzing the selected code...'
   );
 
-  const languageId = document.languageId; // Get the language of the file
+  const languageId = document.languageId;
   const commentStyle = getCommentStyle(languageId);
 
   const model = 'gpt-4-turbo-2024-04-09';
@@ -77,17 +77,14 @@ async function annotateCode(editor) {
     const analysis = await safeGenerate(model, messages);
     // const comment = `${commentStyle.start}\nAI Commentary:\n${analysis}\n${commentStyle.end}\n`;
 
-    // Split the AI commentary into lines to insert them as individual comments
     const commentaryLines = analysis
       .split('\n')
       .map((line) => `${commentStyle.start} ${line.trim()}`);
 
-    // Determine where to insert the comment
     const insertPosition = selection.isEmpty
       ? document.lineAt(document.lineCount - 1).range.end
       : selection.end;
 
-    // Insert the AI commentary as individual comments
     await editor.edit((editBuilder) => {
       commentaryLines.forEach((commentLine, index) => {
         const position = new vscode.Position(insertPosition.line + index, 0);
@@ -152,7 +149,7 @@ async function safeGenerate(model, messages, retries = 3) {
  * Cleans up resources when the extension is deactivated.
  */
 function deactivate() {
-  console.log("Goodbye! The 'AI Code Assistant' is taking a break now.");
+  console.log("Goodbye! The 'CodeWhisper' is taking a break now.");
 }
 
 module.exports = {

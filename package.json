@@ -2,7 +2,7 @@
   "name": "codewhisperer",
   "displayName": "codewhisperer",
   "description": "Runs and annotates your JS code",
-  "version": "1.0",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "child_process": "^1.0.2",
-    "unlimited-ai": "^4.0.0"
+    "unlimited-ai": "^4.0.0",
+    "vsce": "^2.15.0"
   }
 }
