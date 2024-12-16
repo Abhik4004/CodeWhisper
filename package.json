@@ -2,8 +2,8 @@
   "name": "codewhisperer",
   "displayName": "codewhisperer",
   "publisher": "AbhikGhosh",
-  "description": "Runs and annotates your JS code",
-  "version": "1.0.0",
+  "description": "Helps you to understand foreign code",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.95.0"
   },
