@@ -1,6 +1,7 @@
 {
   "name": "codewhisperer",
   "displayName": "codewhisperer",
+  "publisher": "AbhikGhosh",
   "description": "Runs and annotates your JS code",
   "version": "1.0.0",
   "engines": {
@@ -13,7 +14,7 @@
     "onCommand: codewhisperer.run"
   ],
   "main": "./extension.js",
-  "icon": "images/CodeWhisperer.png",
+  "icon": "images/icon.PNG",
   "contributes": {
     "commands": [
       {
